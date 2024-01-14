@@ -1,0 +1,246 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Center contents in the header */
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    margin-top: 20px;
+    text-align: center; /* Center navigation links */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+/* Home Section Styles */
+.home {
+    text-align: center; /* Center contents in the home section */
+    padding: 50px;
+    background-color: #fff;
+    color: #333;
+}
+
+.main-text {
+    max-width: 600px;
+    margin: 0 auto; /* Center text in the main text div */
+}
+
+.main-text h5 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #be1616; /* Accent color */
+}
+
+.main-text h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.main-text p {
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #be1616;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.main-btn:hover {
+    background-color: #333;
+}
+
+.main-btn i {
+    margin-left: 5px;
+}
+
+/* About, Products, Jerseys, Contact Section Styles */
+.about, .jerseys {
+    text-align: center; /* Center contents in these sections */
+    padding: 50px;
+    background-color: #fff;
+    color: #333;
+    border-top: 1px solid #ddd; /* Add a subtle border between sections */
+}
+
+/* Products and Jerseys Section Styles */
+.products, .jerseys {
+    text-align: center; /* Center contents in these sections */
+    padding: 50px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.products .products-grid,
+.jerseys .jerseys-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.rows img,
+.jerrow img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.rows img:hover,
+.jerrow img:hover {
+    transform: scale(1.05);
+}
+
+.product-text h5,
+.jersey-text h5 {
+    font-size: 1.2em;
+    color: #f84e77; /* Accent color */
+    margin-bottom: 10px;
+}
+
+.price h4 {
+    font-size: 1.3em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.price p {
+    font-size: 1.1em;
+    color: #f84e77; /* Accent color */
+    margin-top: 5px;
+}
+
+.heart-icon i {
+    font-size: 1.5em;
+    color: #f84e77; /* Accent color */
+    margin-top: 10px;
+}
+
+.ratting i {
+    font-size: 1.2em;
+    color: #ffd700; /* Gold color for stars */
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .products .products-grid,
+    .jerseys .jerseys-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .rows img,
+    .jerrow img {
+        border-radius: 5px;
+    }
+
+    .price h4 {
+        font-size: 1.2em;
+    }
+
+    .price p {
+        font-size: 1em;
+    }
+
+    .heart-icon i,
+    .ratting i {
+        font-size: 1.2em;
+    }
+}
+
+
+.products, .contact{
+    text-align: center; /* Center contents in these sections */
+    padding: 50px;
+    background-color: #333;
+    color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .home, .about, .products, .jerseys, .contact {
+        padding: 30px;
+    }
+
+    .main-text h1 {
+        font-size: 2.5em;
+    }
+
+    .main-btn, .btn {
+        font-size: 0.9em;
+    }
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+
+}
+
+.contact form{
+    max-width: 60rem;
+    max-height: 15rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: 1rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
